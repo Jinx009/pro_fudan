@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>巾帼园</title>
+	<meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/Swiper/3.1.7/css/swiper.min.css">
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/Swiper/3.1.7/js/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="js/mobiscroll.custom-2.6.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/mobiscroll.custom-2.6.2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jgy.css">
+</head>
+<body>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><a href="javascript:;"><img src="img/banner.png" /></a></div>
+			<div class="swiper-slide"><a href="javascript:;"><img src="img/banner.png" /></a></div>
+			<div class="swiper-slide"><a href="javascript:;"><img src="img/banner.png" /></a></div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+	<!--slide    start-->
+	<div class="activity-slide">
+		<div class="slide-item"><img src="img/slide_one.png" /> <p>文化艺术</p></div>
+		<div class="slide-item"><img src="img/slide_one.png" /> <p>母婴教育</p></div>
+		<div class="slide-item"><img src="img/slide_one.png" /> <p>旅游美食</p></div>
+		<div class="slide-item"><img src="img/slide_one.png" /> <p>婚恋选择</p></div>
+		<div class="slide-item"><img src="img/slide_one.png" /> <p>母婴教育</p></div>
+		<div class="slide-item"><img src="img/slide_one.png" /> <p>旅游美食</p></div>
+		<div class="slide-item"><img src="img/slide_one.png" /> <p>婚恋选择</p></div>
+		<div class="slide-item"><img src="img/slide_one.png" /> <p>母婴教育</p></div>
+		<div class="slide-item"><img src="img/slide_one.png" /> <p>旅游美食</p></div>
+		<div class="slide-item"><img src="img/slide_one.png" /> <p>婚恋选择</p></div>
+		<div class="slide-item"><img src="img/slide_one.png" /> <p>母婴教育</p></div>
+		<div class="slide-item"><img src="img/slide_one.png" /> <p>旅游美食</p></div>
+		<div class="slide-item"><img src="img/slide_one.png" /> <p>婚恋选择</p></div>
+	</div>
+	<!--slide    end-->
+	<!--list     start-->
+	<div class="list">
+		<div class="list-search">
+			<select><option>活动类型</option></select>
+			<select><option>上海</option></select>
+			<div class="calender" id="text-val">
+				<input value="" type="text" id="text-val-one">
+			</div>
+		</div>
+		<a class="activity_detail.html">
+			<div class="list-item">
+				<div class="list-left">
+					<img src="img/list_one.png">
+					<p class="end">已结束</p>
+				</div>
+				<div class="list-right">
+					<h1>“阳光梦想,多彩绽放”安放无处可去的青春</h1>
+					<p><label></label>时间：2016-10-22</p>
+					<p><label></label>地点：宝山区</p>
+					<button class="list-rigth-button">报名:550</button>
+				</div>
+			</div>
+		</a>
+		<a href="activity_detail.html">
+			<div class="list-item">
+				<div class="list-left">
+					<img src="img/list_one.png">
+				</div>
+				<div class="list-right">
+					<h1>“阳光梦想,多彩绽放”安放无处可去的青春</h1>
+					<p><label></label>时间：2016-10-22</p>
+					<p><label></label>地点：宝山区</p>
+					<button class="list-rigth-button">报名:550</button>
+				</div>
+			</div>
+	    </a>
+	</div>
+	<!--list     end-->
+	<div class="blank"></div>
+	<footer>
+		<dl>
+			<dt><img src="img/home.png" /></dt>
+			<dd>活动</dd>
+		</dl>
+		<dl>
+			<dt><img src="img/ablum.png" /></dt>
+			<dd>相册</dd>
+		</dl>
+		<dl>
+			<dt><img src="img/comments.png" /></dt>
+			<dd>反馈</dd>
+		</dl>
+		<dl>
+			<dt><img src="img/data.png" /></dt>
+			<dd>我的</dd>
+		</dl>
+	</footer>
+	<script type="text/javascript">
+		$(function(){
+			var mySwiper = new Swiper('.swiper-container', {
+				  loop: true, //循环播放
+				  autoplay: 5000,
+				  lazyLoading: true, //延迟加载图片
+				  lazyLoadingInPrevNext: true, //延迟加载当前图片之前和之后一张图片
+				  lazyLoadingOnTransitionStart: true, //过渡一开始就加载
+				  pagination: '.swiper-pagination', //导航分页
+				  paginationClickable: true //导航点击切换
+			});
+
+			/*日历*/
+			var opt = {  
+		        theme: "android-ics light", 
+		        display: 'modal', //显示方式  
+		        lang: "zh",  
+		        setText: '确定', //确认按钮名称
+		        cancelText: "取消",  
+		        dateFormat: 'yyyy-mm-dd', //返回结果格式化为年月格式  
+		        dateOrder: 'yyyymmdd', //面板中日期排列格式
+		        onBeforeShow: function (inst) {
+		          }, 
+		        headerText: function (valueText) { //自定义弹出框头部格式  
+		            array = valueText.split('-');  
+		            $("#text-val-one").val(array[0] + "-" + array[1] + "-" + array[2]);
+		            return array[0] + "年" + array[1] + "月" + array[2] + "日";  
+		        }  
+		    };
+
+		  $("#text-val").mobiscroll().date(opt); 
+
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>巾帼园</title>
+	<meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/jgy.css">
+</head>
+<body>
+	<nav class="feed-back-nav">
+		<ul>
+			<li class="actived">我要反馈<span ></span></li>
+			<li>我的反馈<span></span></li>
+		</ul>
+	</nav>
+	<div class="feed-back-content">
+		<div>
+			<textarea placeholder="请输入您的反馈内容1"></textarea>
+		</div>
+		<div style="display: none">
+			<textarea placeholder="请输入您的反馈内容2"></textarea>
+		</div>
+	</div>
+	<a class="btn">发送</a>
+	<footer>
+		<dl>
+			<dt><img src="img/home.png" /></dt>
+			<dd>活动</dd>
+		</dl>
+		<dl>
+			<dt><img src="img/ablum.png" /></dt>
+			<dd>相册</dd>
+		</dl>
+		<dl>
+			<dt><img src="img/comments.png" /></dt>
+			<dd>反馈</dd>
+		</dl>
+		<dl>
+			<dt><img src="img/data.png" /></dt>
+			<dd>我的</dd>
+		</dl>
+	</footer>
+	<script type="text/javascript">
+		$(function(){
+			$(".feed-back-nav ul li").on("click",function(){
+				var index = $(this).index();
+				$(this).addClass('actived').siblings().removeClass('actived');
+				$(".feed-back-content div").hide();
+				$(".feed-back-content div").eq(index).show();
+			});
+		})
+	</script>
+</body>
+</html>

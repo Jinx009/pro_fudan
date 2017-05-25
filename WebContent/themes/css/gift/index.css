@@ -1,0 +1,95 @@
+@font-face {
+	font-family:fz;
+	src: url('fangzheng.ttf')  format('truetype');
+	font-weight: normal;      font-style: normal; 
+}
+html,body{
+	font-family:fz;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+	background: url('bg.jpg')top center no-repeat; 
+    background-size:100% 100%;
+}
+.start-bg{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.start-img{
+	cursor: pointer;
+}
+.my_css { 
+	font-family: fz;  
+	font-size: 3.2em; 
+}
+.gift{
+	font-family: fz;  
+	font-size: 3.2em;
+	width: 100%;
+	margin:0;
+	height: 100%;
+	display: none;
+}
+.gift-top{
+	height: 18%;
+}
+.gift-main{
+	border-radius:50px;
+	border:10px solid yellow;
+	background:white; 
+	filter:alpha(opacity:80);opacity:0.8;
+	width: 80%;
+	margin-left: 10%;
+	height: 60%;
+	text-align: center;
+}
+.main-table-3{
+	width: 100%;
+	border: 0;
+	color: #58595b;
+	text-align: center;
+	height: 65%;
+}
+.main-table-3 td{
+	text-align: center;
+	width: 11%;
+	font-size: 17px;
+}
+.gift-name{
+	color: red;
+	font-size: 48px;
+	z-index: 90;
+	height: 25%;
+	vertical-align: middle;
+	line-height: 100%;
+}
+.main-table-2{
+	width: 100%;
+	border: 0;
+	color: #58595b;
+	text-align: center;
+	height: 65%;
+}
+.main-table-2 td{
+	text-align: center;
+	width: 24%;
+	font-size: 26px;
+}
+.main-table-1{
+	width: 100%;
+	border: 0;
+	color: #58595b;
+	text-align: center;
+	height: 65%;
+}
+.main-table-1 td{
+	text-align: center;
+	width: 35%;
+	font-size:48px;
+}
